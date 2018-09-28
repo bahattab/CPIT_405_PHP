@@ -1,0 +1,100 @@
+# Cygwin Tutorial Table of Contents
+
+https://www.youtube.com/watch?v=Wv7Bs5dRoK8
+
+Packages
+==============
+lynx,
+wget,
+curl,
+rsync
+python,
+python3
+bzip,
+tar
+bash-completion
+vim, vim-common
+tmux
+git
+diffutils
+Make
+openssh
+
+
+
+Useful Stuff
+=============
+cd /bin
+curl https://github.com/git/git/raw/master/contrib/completion/git-completion.bash -OL
+source git-completion.bash
+
+
+
+lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
+install apt—cyg /bin
+apt-cyg install nano
+
+
+
+vim ~/.bashrc
+alias desktop="cd C:/Users/huyle/Desktop"
+alias open='cygstart'
+alias reload='source ~/.bash_profile'
+export PATH="${HOME}/bin:${PATH}"
+
+
+
+Tabs and Hotkeys
+================
+We'll use Console2 :  https://sourceforge.net/projects/console/
+https://sourceforge.net/projects/console/files/latest/download
+
+Integrate with Command Prompt
+
+For 64 bit, add C:\cygwin64\bin; to the end (System -> PATH ) of the environment variables.
+
+
+
+==========================
+Can you answer the 10 most popular Linux tech job interview questions?
+
+	 How to check the kernel version of a Linux system?
+		UName 	-a
+				-v
+				-r
+
+	 How to see the current IP address on Linux?
+		ifconfig
+		ip addr show eth0
+
+	 How to check for free disk space in Linux?
+		df -ah
+
+	 How to see if a Linux service is running?
+		service serviceName status
+			serviceName statr/running, process 286
+		systemctl status serviceName
+
+	 How to check the size of a directory in Linux?
+		ls
+			du -sh directoryName
+
+	 How to check for open ports in Linux?
+		sudo netstat -tulpn
+
+	 How to check Linux process information (CPU usage, memory, user information, etc.)?
+		ps aux | grep nginx
+		top
+		htop
+
+	 How to deal with mounts in Linux
+		ls /mnt
+		mount /dev/sda2 /mnt
+		mount
+		less /etc/fstab
+
+	 Man pages
+		man <command>
+		man ps
+
+	 Other resources
